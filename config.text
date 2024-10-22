@@ -1,0 +1,4 @@
+bundle install
+rails tailwindcss:install
+rails db:migrate
+rails server

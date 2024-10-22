@@ -34,8 +34,8 @@
             base_fare: @base_fare,
             service_fee: @service_fee,
             total_amount: @total_amount
-          ), method: :post do |form| %>
-            <%= form.submit "Confirm and pay", class:"rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white text-lg shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" %>
+          ), method: :post, id: "payment-form" do |form| %>
+            <%= form.submit "Confirm for payment", class:"rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white text-lg shadow-sm hover:bg-primary-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary", id: "confirm-pay-button" %>
           <% end %>
         </div>
       </div>
