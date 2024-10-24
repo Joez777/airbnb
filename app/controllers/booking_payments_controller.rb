@@ -18,7 +18,7 @@ class BookingPaymentsController < ApplicationController
     )
 
     # TODO: redirect to all bookings page or show a success message
-    redirect_to root_path, notice: 'การจองของคุณเสร็จสมบูรณ์'
+    redirect_to root_path, notice: 'Your booking has been completed.'
   end
 
   private
